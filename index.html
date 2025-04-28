@@ -1,253 +1,83 @@
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>Pooja H M | Embedded Systems Engineer</title>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap" rel="stylesheet">
-  <style>
-    * {
-      margin: 0;
-      padding: 0;
-      box-sizing: border-box;
-      scroll-behavior: smooth;
-    }
-
-    body {
-      font-family: 'Inter', sans-serif;
-      background: #f4f7fa;
-      color: #333;
-      padding: 50px 20px;
-      line-height: 1.6;
-    }
-
-    .container {
-      max-width: 1000px;
-      margin: auto;
-      background: #fff;
-      border-radius: 15px;
-      box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
-      padding: 40px;
-      animation: fadeIn 1.2s ease-in-out;
-    }
-
-    h1 {
-      text-align: center;
-      color: #0a3d62;
-      margin-bottom: 10px;
-      font-size: 2.5rem;
-    }
-
-    .contact-info {
-      text-align: center;
-      margin-bottom: 30px;
-      font-size: 0.95rem;
-      color: #555;
-    }
-
-    .section {
-      margin-bottom: 40px;
-    }
-
-    h2 {
-      color: #0073e6;
-      border-bottom: 2px solid #0073e6;
-      padding-bottom: 6px;
-      margin-bottom: 20px;
-      font-size: 1.6rem;
-    }
-
-    ul, li {
-      list-style: none;
-    }
-
-    .skills, .education-table, .lang-list, .interest-list {
-      display: flex;
-      flex-wrap: wrap;
-      gap: 15px;
-    }
-
-    .tag {
-      background: linear-gradient(135deg, #007bff, #0056b3);
-      color: white;
-      padding: 10px 20px;
-      border-radius: 50px;
-      font-size: 14px;
-      transition: transform 0.3s;
-      cursor: default;
-    }
-
-    .tag:hover {
-      transform: scale(1.05);
-    }
-
-    table {
-      width: 100%;
-      border-collapse: collapse;
-      margin-top: 10px;
-    }
-
-    th, td {
-      border: 1px solid #ccc;
-      padding: 10px;
-      text-align: center;
-      font-size: 14px;
-    }
-
-    th {
-      background-color: #0073e6;
-      color: #fff;
-    }
-
-    .project, .workshop {
-      background: #f9f9f9;
-      padding: 15px;
-      border-left: 5px solid #0073e6;
-      margin-bottom: 15px;
-      border-radius: 5px;
-    }
-
-    @keyframes fadeIn {
-      from { opacity: 0; transform: translateY(40px); }
-      to { opacity: 1; transform: translateY(0); }
-    }
-
-    @media (max-width: 768px) {
-      .skills, .education-table {
-        flex-direction: column;
-      }
-    }
-  </style>
+  <link rel="stylesheet" href="styles.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap" rel="stylesheet">
 </head>
 <body>
 
-  <div class="container">
-    <h1>Pooja H M – Embedded Systems Engineer</h1>
-    <div class="contact-info">
-      📍 Bangalore, India &nbsp; | &nbsp; 📧 pooja@example.com &nbsp; | &nbsp; 📱 +91-XXXXXXXXXX <br>
-      <a href="#">LinkedIn</a> | <a href="#">GitHub</a> | <a href="#">Portfolio Website</a>
+  <header id="home">
+    <div class="overlay">
+      <h1>Pooja H M</h1>
+      <p>Embedded Systems Engineer</p>
+      <a href="#about" class="scroll-btn">Explore Portfolio ↓</a>
     </div>
+  </header>
 
-    <div class="section">
-      <h2>🔹 Objective</h2>
-      <p>To leverage my technical expertise and problem-solving abilities to contribute to an innovative organization. I aim to grow professionally in a challenging environment that encourages continuous learning and provides opportunities for advancement.</p>
-    </div>
+  <nav class="navbar">
+    <a href="#about">About</a>
+    <a href="#skills">Skills</a>
+    <a href="#projects">Projects</a>
+    <a href="#education">Education</a>
+    <a href="#contact">Contact</a>
+  </nav>
 
-    <div class="section">
-      <h2>🎓 Education</h2>
-      <table>
-        <thead>
-          <tr>
-            <th>Qualification</th>
-            <th>Institution</th>
-            <th>Board / University</th>
-            <th>Year</th>
-            <th>Percentage</th>
-          </tr>
-        </thead>
-        <tbody>
-          <tr>
-            <td>B.E (ECE)</td>
-            <td>NIEIT, Mysore</td>
-            <td>VTU</td>
-            <td>2024</td>
-            <td>70%</td>
-          </tr>
-          <tr>
-            <td>12th</td>
-            <td>SRS PU College</td>
-            <td>Dept. of Pre-University</td>
-            <td>2020</td>
-            <td>79%</td>
-          </tr>
-          <tr>
-            <td>10th</td>
-            <td>Govt. High School</td>
-            <td>Karnataka State Board</td>
-            <td>2018</td>
-            <td>85%</td>
-          </tr>
-        </tbody>
-      </table>
-    </div>
+  <section id="about" class="card">
+    <h2>👋 About Me</h2>
+    <p>
+      I'm a passionate Embedded Systems Engineer based in Bangalore, with hands-on experience in microcontrollers, C/C++, IoT systems, and Linux. I recently completed a PG Diploma in Embedded Systems from IIES, Bangalore, and hold a B.E. in ECE from NIEIT, Mysore.
+    </p>
+  </section>
 
-    <div class="section">
-      <h2>🧠 Technical Skill Set</h2>
-      <div class="skills">
-        <div class="tag">AssemblyScript</div>
-        <div class="tag">C</div>
-        <div class="tag">C++ (OOPs)</div>
-        <div class="tag">Python</div>
-        <div class="tag">Canva</div>
-        <div class="tag">Pandas</div>
-        <div class="tag">NumPy</div>
-        <div class="tag">Git</div>
-        <div class="tag">GitHub</div>
-        <div class="tag">Arduino</div>
-        <div class="tag">Raspberry Pi</div>
-        <div class="tag">Zigbee</div>
-        <div class="tag">Power BI</div>
-        <div class="tag">8051 Microcontroller</div>
-        <div class="tag">ARM Cortex M3</div>
-        <div class="tag">Linux Commands</div>
-        <div class="tag">Manual Testing</div>
-        <div class="tag">Automation</div>
-        <div class="tag">HIL</div>
-        <div class="tag">SIL</div>
-        <div class="tag">Basic Electronics</div>
-        <div class="tag">PCB Design</div>
-        <div class="tag">Data Structures</div>
-      </div>
+  <section id="skills" class="card">
+    <h2>🧠 Technical Skills</h2>
+    <div class="tags">
+      <span>AssemblyScript</span><span>C</span><span>C++</span><span>Python</span>
+      <span>Canva</span><span>Pandas</span><span>NumPy</span><span>Git</span>
+      <span>GitHub</span><span>Arduino</span><span>Raspberry Pi</span><span>Zigbee</span>
+      <span>Power BI</span><span>8051</span><span>ARM Cortex M3</span><span>Linux</span>
+      <span>Manual Testing</span><span>Automation</span><span>HIL</span><span>SIL</span>
     </div>
+  </section>
 
-    <div class="section">
-      <h2>🛠️ Projects</h2>
-      <div class="project">
-        <strong>IoT-Based Smart Medicine Box</strong><br>
-        <em>Role: Developer</em><br>
-        Developed a connected medicine box that reminds users to take medicine on time and updates status to caregivers. Includes real-time alerts, IoT-based remote access, and healthcare data monitoring.<br>
-        <strong>Tools Used:</strong> Microcontroller, Sensors, IoT Modules, Embedded C
-      </div>
-    </div>
+  <section id="projects" class="card">
+    <h2>🛠️ Projects</h2>
+    <h3>IoT-Based Smart Medicine Box</h3>
+    <p>
+      A connected medicine box that reminds patients to take their medication and sends alerts to caregivers in real-time. Built using Embedded C, sensors, microcontrollers, and IoT modules.
+    </p>
+  </section>
 
-    <div class="section">
-      <h2>🎓 Professional Courses & Workshops</h2>
-      <div class="workshop">
-        Post Graduate Diploma in Embedded Systems Design and Development – IIES, Bangalore
-      </div>
-      <div class="workshop">
-        Workshop: Basics of PCB Board Designing
-      </div>
-      <div class="workshop">
-        Training: Basics of Linux Commands
-      </div>
-    </div>
+  <section id="education" class="card">
+    <h2>🎓 Education</h2>
+    <ul>
+      <li><strong>B.E (ECE)</strong> – NIEIT, Mysore (VTU) – 2024 – 70%</li>
+      <li><strong>12th</strong> – SRS PU College – 2020 – 79%</li>
+      <li><strong>10th</strong> – Govt. High School – 2018 – 85%</li>
+    </ul>
+    <h3>Courses & Workshops</h3>
+    <ul>
+      <li>PG Diploma in Embedded Systems – IIES Bangalore</li>
+      <li>Linux Command Line Basics</li>
+      <li>PCB Design Workshop</li>
+    </ul>
+  </section>
 
-    <div class="section">
-      <h2>🧪 Internships / Experience</h2>
-      <p>Fresher – Currently seeking opportunities to apply my skills in a professional environment.</p>
-    </div>
+  <section id="contact" class="card">
+    <h2>📞 Contact</h2>
+    <p>📍 Bangalore, India</p>
+    <p>
+      <a href="www.linkedin.com/in/poojahmsoftwaredeveloper">LinkedIn</a> | <a href="https://github.com/poojahmsoftwaredeveloper">GitHub</a>
+    </p>
+  </section>
 
-    <div class="section">
-      <h2>🗣️ Languages Known</h2>
-      <div class="lang-list">
-        <div class="tag">English</div>
-        <div class="tag">Kannada</div>
-        <div class="tag">Hindi</div>
-      </div>
-    </div>
-
-    <div class="section">
-      <h2>📌 Career Interests</h2>
-      <div class="interest-list">
-        <div class="tag">Embedded Systems Development</div>
-        <div class="tag">IoT Applications</div>
-        <div class="tag">Electronics Design and Testing</div>
-        <div class="tag">Firmware Development</div>
-        <div class="tag">Automation & Control Systems</div>
-      </div>
-    </div>
-  </div>
+  <footer>
+    <p>&copy; 2025 Pooja H M | Designed with 💡</p>
+  </footer>
 
 </body>
 </html>
